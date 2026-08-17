@@ -1,0 +1,13 @@
+#!name=海角社区解锁
+#!desc=解锁会员视频+解锁付费视频 (需Vip2-3权限的有的可能未解锁)
+#!author=彭于晏💞
+#!homepage=https://t.me/plus8889
+#!icon=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Video.png
+#!date=2026-08-08
+
+[Script]
+# 海角社区视频解析解锁
+http-response ^https?:\/\/(www\.)?haijiao\.com\/api\/(attachment|topic\/\d+|banner\/banner_list) script-path=https://raw.githubusercontent.com/89996462/Quantumult-X/main/ghs/haijiao.js, requires-body=true, timeout=30, tag=海角社区VIP解锁
+
+[Mitm]
+hostname = haijiao.com, *.haijiao.com
